@@ -1,0 +1,350 @@
+.top-strip {
+    background-color: purple;
+    width: 100%;
+    height: 6vh;
+    text-align: center;
+    color: white;
+    font-family: "lato", sans-serif;
+    font-size: 14px;
+    padding-top: 8px;
+}
+
+.navbar {
+    width: 100%;
+    height: 15vh;
+    background-color: rgba(128, 0, 128, 0.439);
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo {
+    width: 15%;
+    /* Increase width as needed */
+    height: 12vh;
+    /* Increase height */
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+}
+
+.logo-link {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* border: 1px solid black; */
+}
+
+.part2 {
+    width: 100%;
+    min-width: 150px;
+    text-align: left;
+    border-radius: 10px;
+    background-color: #6a68e244;
+    color: #000;
+}
+
+.countrydrop {
+    width: 200px;
+}
+
+.label {
+    text-align: left;
+    font-size: 11px;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.756);
+}
+
+.name {
+    font-size: 13px;
+    text-transform: capitalize;
+    color: white;
+    font-weight: 700;
+}
+
+.droparrow {
+    margin-left: 30px;
+    color: white;
+}
+
+/* LOCATION MODAL DROPDOWN */
+
+.location-model .MuiPaper-elevation {
+    padding: 25px;
+    margin-top: 20px;
+    width: 36%;
+}
+
+/* LOCATION SEARCH BAR */
+
+.locationsearchbar {
+    position: relative;
+    margin: -20px 0;
+}
+
+.locationsearchbar input {
+    width: 100%;
+    padding: 10px 40px 10px 12px;
+    font-size: 16px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.locationsearchbar button {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    color: #333;
+    opacity: 0.6;
+    cursor: pointer;
+    padding: 0;
+}
+
+.locationsearchbar button:hover {
+    opacity: 1;
+}
+
+.CountryList {
+    margin-top: 45px;
+    max-height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.CountryList li {
+    list-style: none;
+}
+
+.CountryList li Button {
+    width: 100%;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #000;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    transition: 0.3s ease;
+}
+
+.CountryList li Button:hover,
+.CountryList li Button.active {
+    background-color: #f0faff;
+    color: #21b0e9;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ccc;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.closed {
+    position: absolute;
+    bottom: 90px;
+    left: 410px;
+    color: #000;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.searchbar {
+    width: 40%;
+    height: 45px;
+    border-radius: 10px;
+    background-color: rgb(238, 247, 255);
+    position: relative;
+}
+
+.searchbar input {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.searchbar Button {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #000;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.user {
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.user Button {
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    border: 1px solid rgba(0, 0, 0, 0.184);
+}
+
+.price {
+    margin-left: -50px;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+}
+
+.cartTab {
+    background-color: #fff1ee;
+    border-radius: 50%;
+    width: 40px;
+}
+
+.cart-logo {
+    margin-left: 4px;
+}
+
+.cartTab Button {
+    color: rgba(255, 0, 0, 0.646);
+    border: none;
+}
+
+.count {
+    position: absolute;
+    top: 18px;
+    right: 65px;
+    background-color: #ea2b0f;
+    border-radius: 50%;
+    color: #fff;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    font-size: 14px;
+    padding-left: 9px;
+}
+
+
+.nav-two {
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(128, 128, 128, 0.18);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(131, 8, 129, 0.26);
+}
+
+.btn {
+    width: 16%;
+    height: 10vh;
+    border: none;
+    /* border: 1px solid black; */
+}
+
+.btn Button {
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-around;
+    background-color: #e99be99c;
+    color: black;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: 600;
+    padding-top: 7px;
+}
+
+.nav-links {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    /* Add this to control submenu positioning */
+}
+
+.nav-links li {
+    position: relative;
+    /* Needed to position the submenu absolutely inside */
+    list-style: none;
+}
+
+/* Button inside nav */
+.nav-links Button {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #000;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.submenue {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    width: 200px;
+    padding: 13px 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+}
+
+/* Show submenu on hover of parent li */
+.nav-links li:hover .submenue {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Submenu link buttons */
+.sub-link Button {
+    width: 100%;
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #000;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    background-color: transparent;
+    transition: 0.3s ease;
+    text-align: left;
+}
+
+.sub-link Button:hover {
+    background-color: #f0faff;
+    color: #2bbef9;
+}

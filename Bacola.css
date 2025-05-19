@@ -1,0 +1,59 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "lotto" sans-serif;
+}
+
+.herosection {
+    width: 100%;
+    height: 100vh;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.left {
+    width: 30%;
+    height: 80vh;
+    /* border: 1px solid black; */
+
+}
+
+.left img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.right {
+    width: 65%;
+    border: 1px solid black;
+    height: 80vh;
+    padding: 0px 0px;
+}
+
+.right h3 {
+    color: purple;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.right span {
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 22px;
+}
+
+.viewall {
+    position: absolute;
+    right: 23px;
+    bottom: -50px;
+}
+.product-item{
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+}

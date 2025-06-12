@@ -1,32 +1,36 @@
+/* Import slick carousel styles */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css");
 
-
+/* Container for your banner slider */
 .homebanner {
-  width: 95%;
+  width: 96%;
   height: 57vh;
-  margin-left: 30px;
-
+  margin-left: 28px;
 }
 
+/* Each slider item container */
 .item {
   overflow: hidden;
   width: 100%;
   height: 57vh;
+  position: relative;
 }
 
+/* Images inside .item */
 .item img {
   width: 100%;
   height: 57vh;
+  object-fit: cover; /* ensures image covers container */
 }
 
+/* Slick slider arrows styling */
 .slick-next,
 .slick-prev {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.5);
-  /* color: white; */
   border: none;
   display: flex;
   align-items: center;
@@ -40,9 +44,65 @@
   transform: translateY(-50%);
 }
 
-/* .slick-next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
+/* Optional: Uncomment to add hover effect on arrows */
+/*
+.slick-next:hover,
 .slick-prev:hover {
   background-color: rgba(0, 0, 0, 0.8);
-} */
+}
+*/
+
+/* ---- Your product card styles for two-image hover swap ---- */
+
+/* Add space between each product card */
+.product-item {
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+/* Wrapper holding both images */
+.imagewrapper {
+  position: relative;
+  width: 100%;
+  max-width: 250px;  /* adjust card width */
+  height: 300px;     /* adjust card height */
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Images inside the wrapper */
+.imagewrapper img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.4s ease;
+  display: block;
+}
+
+/* Default visible image */
+.imagewrapper img[class^="img"] {
+  z-index: 2;
+  opacity: 1;
+}
+
+/* Hover image hidden initially */
+.imagewrapper img[class^="bot"] {
+  z-index: 1;
+  opacity: 0;
+}
+
+/* Swap images on hover */
+.imagewrapper:hover img[class^="img"] {
+  opacity: 0;
+}
+
+.imagewrapper:hover img[class^="bot"] {
+  opacity: 1;
+}

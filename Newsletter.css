@@ -1,0 +1,129 @@
+.newsletter-section {
+  background-color: rgba(128, 0, 128, 0.745);
+  padding: 60px 40px;
+  color: white;
+  width: 100%;
+  /* Removed height and overflow to let content grow naturally */
+}
+
+.newsletter-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.text-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.small-heading {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.text-content h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.subtext {
+  font-size: 16px;
+  margin-bottom: 25px;
+  color: #cfd8ff;
+}
+
+.email-form {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 6px;
+  padding: 10px 15px;
+  flex: 1;
+  min-width: 250px;
+}
+
+.input-group .icon {
+  color: gray;
+  margin-right: 10px;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  flex: 1;
+}
+
+.subscribe-btn {
+  background: white;
+  color: #1e3180;
+  padding: 12px 24px;
+  border: 2px solid white;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.subscribe-btn:hover {
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+
+.image-content {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  min-width: 500px;
+  margin-top: -32px;
+}
+
+.image-content img {
+  max-width: 100%;
+  height: auto;
+}
+
+.newsbottom {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 4px;
+  text-align: center;
+  font-weight: 500;
+  color: #fff;
+  background-color: white;
+  align-items: center;
+  /* border: 2px solid rgba(0, 0, 0, 0.203);  */
+
+}
+.newsbottom span{
+  color: black;
+  border: 3px solid rgba(0, 0, 0, 0.069); 
+  text-align: center;
+  font-size: 25px;
+  width: 100%;
+  /* padding: 21px; */
+  /* color: red; */
+}
+.newsbottom span h3{
+  font-family: cursive;
+  color: black;
+  font-size: 20px;
+  
+}

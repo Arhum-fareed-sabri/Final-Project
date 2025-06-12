@@ -1,59 +1,283 @@
 * {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    font-family: "lotto" sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  /* overflow-x: hidden; Uncomment if needed */
 }
 
+/* Hero Section */
 .herosection {
-    width: 100%;
-    height: 100vh;
-    margin-top: 60px;
-    display: flex;
-    justify-content: space-evenly;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .left {
-    width: 30%;
-    height: 80vh;
-    /* border: 1px solid black; */
-
+  width: 30%;
+  height: 74vh;
 }
 
 .left img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .right {
-    width: 65%;
-    border: 1px solid black;
-    height: 80vh;
-    padding: 0px 0px;
+  width: 63%;
+  height: 80vh;
+}
+
+.heading {
+  line-height: 10px;
 }
 
 .right h3 {
-    color: purple;
-    text-align: left;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 30px;
-    font-weight: 600;
+  color: purple;
+  text-align: left;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  font-weight: 600;
 }
 
 .right span {
-    text-align: left;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-family: 22px;
+  text-align: left;
+  font-family: cursive;
+  font-size: 22px;
 }
 
-.viewall {
-    position: absolute;
-    right: 23px;
-    bottom: -50px;
+.viewall button {
+  position: absolute;
+  right: 30px;
+  top: 140%;
+  color: #000;
+  font-weight: 600;
 }
-.product-item{
-    width: 100%;
-    height: auto;
-    border: 1px solid black;
+
+/* Product Section */
+.product {
+  width: 100%;
+  margin-top: 40px;
 }
+
+.product-item {
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(220, 220, 220, 0.262);
+  border: 1px solid rgba(0, 0, 0, 0.063);
+}
+
+/* Image Wrapper */
+.imagewrapper {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  margin: -30px auto;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Image Behavior */
+.imagewrapper img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s ease;
+  display: block;
+}
+
+.imagewrapper img:nth-child(1) {
+  z-index: 2;
+  opacity: 1;
+}
+
+.imagewrapper img:nth-child(2) {
+  z-index: 1;
+  opacity: 0;
+}
+
+.imagewrapper:hover img:nth-child(1) {
+  opacity: 0;
+}
+
+.imagewrapper:hover img:nth-child(2) {
+  opacity: 1;
+}
+
+/* Details */
+.details {
+  width: 100%;
+}
+
+.details h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: purple;
+  text-align: left;
+}
+
+.details span {
+  font-size: 12px;
+}
+
+.details p {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.details p span {
+  color: red;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Image Actions */
+.image-actions {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 23%;
+  height: 110px;
+  top: 35px;
+  right: 2px;
+  background-color: #ffffff;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  transform: translateY(-10px);
+  z-index: 3;
+  border-radius: 20px;
+}
+
+.imagewrapper:hover .image-actions {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* Icon Buttons */
+.icon-btn {
+  width: 34px;
+  height: 34px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  font-size: 18px;
+  margin-left: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.icon-btn:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.1);
+}
+
+/* Secondary Product Wrapper */
+.sec-product-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.6s ease, opacity 0.5s ease;
+}
+
+.sec-product-wrapper.open {
+  max-height: 1000px;
+  opacity: 1;
+}
+
+.sec-product {
+  width: 100%;
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-around;
+}
+
+/* Hero Section 2 */
+.herosection2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+}
+
+.left2 {
+  margin-left: 50px;
+  width: 23%;
+  height: 80vh;
+}
+
+.left2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.left2 h3 {
+  text-align: center;
+  font-family: cursive;
+  color: rgba(128, 0, 128, 0.651);
+  font-weight: 600;
+}
+
+.left2 h3 span {
+  color: black;
+  font-family: cursive;
+  font-weight: 500;
+}
+
+.right2 {
+  width: 63%;
+  height: 100vh;
+  margin-left: 45px;
+  border-radius: 20px;
+}
+
+.emb-products {
+  width: 10%;
+  height: 90vh;
+  padding: 0 20px;
+  position: relative;
+}
+
+.emb {
+  width: 100%;
+  height: 90vh;
+  border-radius: 10px;
+  display: block;
+}
+
+/* Bottom image hidden until hover */
+.embbot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+  z-index: 1;
+}
+
+/* Hover effect for emb-products */
+.emb-products:hover .embbot {
+  opacity: 1;
+  z-index: 2;
+}
+
+.emb-products:hover .emb {
+  opacity: 0.3;
+}
+

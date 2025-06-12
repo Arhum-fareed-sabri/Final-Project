@@ -1,0 +1,156 @@
+.product-modal {
+  display: flex;
+  gap: 2rem;
+  padding: 30px;
+  position: relative;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .product-modal {
+    flex-direction: row;
+  }
+}
+
+/* Close button */
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+}
+
+/* Left: Image Section */
+.product-images {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-images img.main-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.thumbnail-container {
+  display: flex;
+  gap: 10px;
+}
+
+.thumbnail-container img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border: 1px solid #ddd;
+  padding: 4px;
+  cursor: pointer;
+}
+
+/* Right: Details */
+.product-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.product-details h2 {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+
+.review-stars {
+  color: #ffc107;
+  font-size: 1rem;
+}
+
+.price {
+  font-size: 1.2rem;
+}
+
+.price .current-price {
+  color: #e60023;
+  font-weight: bold;
+  margin-left: 50px;
+}
+
+.stock-status {
+  font-weight: bold;
+}
+
+.stock-in {
+  color: green;
+}
+
+.stock-out {
+  color: red;
+}
+
+.product-description {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.quantity-cart {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.quantity-box {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.quantity-box button {
+  background: #f2f2f2;
+  border: none;
+  padding: 5px 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.quantity-box div {
+  padding: 5px 15px;
+  min-width: 30px;
+  text-align: center;
+}
+
+.add-to-cart-button {
+  background-color: #007aff;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-to-cart-button:hover {
+  background-color: #005bb5;
+}
+
+.wishlist-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #666;
+  cursor: pointer;
+}
+
+.wishlist-button.active {
+  color: #e60023;
+}
+
+.product-category {
+  font-size: 0.9rem;
+  color: #444;
+}

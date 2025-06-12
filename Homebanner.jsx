@@ -7,12 +7,12 @@ import slide4 from "../../assets/slider4.webp"
 import "./Homebanner.css"
 const Homebanner = () => {
     var settings = {
-        arrow:true,
+        // arrow: true,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay:true,
+        autoplay: true,
 
     };
     return (
